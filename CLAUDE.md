@@ -30,7 +30,11 @@ on the calendar for the next two weeks (earnings, product events, Fed decisions,
    found, record it as missing (`null` or an empty list) and say so in the changelog entry.
    The page must render correctly with missing data.
 6. Weekly change is computed by the page from the closes in `BRIEF`; never type a percentage.
-7. The page must work on a phone (readable at 380px, no horizontal scroll, tap targets at
+7. Prices are closing prices only. If today's close is not available yet (the market is
+   still open, or the close has not been posted), the latest price is the previous trading
+   day's close. Never record an intraday price: `latest` is always `null` and
+   `priceType` is always `"close"`.
+8. The page must work on a phone (readable at 380px, no horizontal scroll, tap targets at
    least 44px) and print on one or two pages as a clean brief.
 
 ## How work is done here

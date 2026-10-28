@@ -179,94 +179,109 @@ const WATCHLIST = {
 };
 
 const BRIEF = {
-  mode: "sample",
-  asOf: "2026-10-16",
-  retrievedAt: "2026-10-16T16:30:00-04:00",
+  mode: "live",
+  asOf: "2026-10-27",
+  retrievedAt: "2026-10-28T11:15:00-04:00",
   priceType: "close",
   companies: {
-    NVDA: {
+    AMD: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 101.40 },
-        { date: "2026-10-14", close: 99.80 },
-        { date: "2026-10-15", close: 103.10 },
-        { date: "2026-10-16", close: 104.20 }
+        { date: "2026-10-21", close: 552.72 },
+        { date: "2026-10-22", close: 507.93 },
+        { date: "2026-10-23", close: 516.79 },
+        { date: "2026-10-26", close: 531.28 },
+        { date: "2026-10-27", close: 560.26 }
       ],
       latest: null,
-      priceSource: "https://example.com/sample",
+      priceSource: "https://stockanalysis.com/stocks/amd/history/",
       news: [
-        { date: "2026-10-15", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample. The agent writes one plain sentence here on why the item matters to the stock." }
+        { date: "2026-10-27", headline: "AMD and Meta Advance Strategic Partnership to Power Meta's Superintelligence Infrastructure", source: "AMD (press release)", url: "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure", why: "AMD says its Helios rack systems are being installed at Meta and it will invest $1 billion in Meta's equity offering, a sign of deeper data-center demand from a major AI buyer." }
       ],
       upcoming: [
-        { date: "2026-10-28", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-11-03", event: "Q3 2026 earnings, after market close; call at 5 p.m. ET", source: "AMD (press release)", url: "https://ir.amd.com/news-events/press-releases/detail/1300" }
       ]
     },
-    JPM: {
+    BWXT: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 99.30 },
-        { date: "2026-10-14", close: 98.90 },
-        { date: "2026-10-15", close: 98.20 },
-        { date: "2026-10-16", close: 97.60 }
+        { date: "2026-10-21", close: 135.11 },
+        { date: "2026-10-22", close: 127.30 },
+        { date: "2026-10-23", close: 127.19 },
+        { date: "2026-10-26", close: 131.20 },
+        { date: "2026-10-27", close: 134.07 }
       ],
       latest: null,
-      priceSource: "https://example.com/sample",
-      news: [
-        { date: "2026-10-14", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
-      ],
-      upcoming: []
-    },
-    ACN: {
-      closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 100.20 },
-        { date: "2026-10-14", close: 99.90 },
-        { date: "2026-10-15", close: 100.10 },
-        { date: "2026-10-16", close: 100.05 }
-      ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      priceSource: "https://stockanalysis.com/stocks/bwxt/history/",
       news: [],
       upcoming: [
-        { date: "2026-10-22", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-11-02", event: "Q3 2026 results, after market close; call at 5 p.m. ET", source: "Business Wire via Finviz", url: "https://finviz.com/news/398036/bwx-technologies-to-announce-third-quarter-2026-results-on-monday-november-2" }
       ]
     },
-    DE: {
+    FOXF: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 102.50 },
-        { date: "2026-10-14", close: 101.80 },
-        { date: "2026-10-15", close: 103.90 },
-        { date: "2026-10-16", close: 102.70 }
+        { date: "2026-10-21", close: 14.85 },
+        { date: "2026-10-22", close: 15.33 },
+        { date: "2026-10-23", close: 15.07 },
+        { date: "2026-10-26", close: 14.73 },
+        { date: "2026-10-27", close: 15.44 }
       ],
       latest: null,
-      priceSource: "https://example.com/sample",
-      news: [
-        { date: "2026-10-13", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
-      ],
-      upcoming: []
+      priceSource: "https://stockanalysis.com/stocks/foxf/history/",
+      news: [],
+      upcoming: [
+        { date: "2026-11-05", event: "Q3 2026 results, after market close; call at 4:30 p.m. ET", source: "GlobeNewswire via Finviz", url: "https://finviz.com/news/403554/fox-factory-holding-corp-announces-third-quarter-2026-earnings-conference-call" }
+      ]
     },
-    LLY: {
+    NVDA: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 98.70 },
-        { date: "2026-10-14", close: 99.60 },
-        { date: "2026-10-15", close: 101.30 },
-        { date: "2026-10-16", close: 102.90 }
+        { date: "2026-10-21", close: 221.97 },
+        { date: "2026-10-22", close: 212.21 },
+        { date: "2026-10-23", close: 210.96 },
+        { date: "2026-10-26", close: 216.00 },
+        { date: "2026-10-27", close: 217.94 }
       ],
       latest: null,
-      priceSource: "https://example.com/sample",
+      priceSource: "https://stockanalysis.com/stocks/nvda/history/",
       news: [
-        { date: "2026-10-16", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-27", headline: "NVIDIA and Oracle Expand NVIDIA Vera Rubin to Multi-Gigawatt Scale and Bring NVIDIA Vera CPU to Oracle Cloud Infrastructure", source: "NVIDIA Newsroom", url: "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure", why: "Oracle plans to grow its Vera Rubin clusters to multi-gigawatt scale, which points to continued large orders for NVIDIA's next-generation systems." },
+        { date: "2026-10-26", headline: "NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth", source: "NVIDIA Newsroom", url: "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth", why: "Meta will expand its use of NVIDIA chips and networking, and NVIDIA will invest $3 billion in Meta's equity offering." },
+        { date: "2026-10-23", headline: "Nvidia Stock News (Oct 23, 2026): NVDA Falls 4.4% to $212.21", source: "Gotrade", url: "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-23-2026/", why: "Covers the Oct 22 drop, which the article ties to a sector-wide chip sell-off on AI spending worries after Meta's results, not to NVIDIA-specific news." }
       ],
       upcoming: [
-        { date: "2026-10-30", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-10-28", event: "Market-wide: FOMC rate decision (Oct 27 to 28 meeting)", source: "Federal Reserve", url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+        { date: "2026-11-10", event: "Market-wide: October CPI release, 8:30 a.m. ET", source: "U.S. Bureau of Labor Statistics", url: "https://www.bls.gov/schedule/news_release/cpi.htm" }
       ]
     }
   }
 };
 
 const CHANGELOG = [
+  {
+    date: "2026-10-28",
+    summary: [
+      "Rerun under the new closes-only rule: replaces this morning's Oct 28 intraday prices with closing prices. Every ticker now shows closes Oct 21 to Oct 27; Oct 28 is left out because the source pages showed the market still open (stockanalysis.com, 11:01 to 11:15 AM EDT, \"Market open\").",
+      "AMD 552.72 to 560.26 on an expanded Meta partnership (Helios racks, $1B investment in Meta's equity offering)",
+      "BWXT 135.11 to 134.07, no major news found in the last seven days",
+      "FOXF 14.85 to 15.44, no major news found in the last seven days (the Oct 16 CEO change and lowered outlook fall outside the window)",
+      "NVDA 221.97 to 217.94 on the Oct 22 chip sell-off, then new Meta and Oracle deals",
+      "Calendar unchanged and re-confirmed: BWXT Q3 results Nov 2, AMD Q3 earnings Nov 3, FOXF Q3 results Nov 5, FOMC decision Oct 28, October CPI Nov 10.",
+      "Missing: Oct 28 close for all four tickers (not posted yet). No news items dated Oct 21 to Oct 28 found for BWXT or FOXF (lists left empty). No NVDA company event found for the next 14 days (Q3 FY2027 earnings date not announced)."
+    ],
+    note: "Verify by hand: the Oct 21 to Oct 27 closes against a second source; BWXT Nov 2 and FOXF Nov 5 dates come from wire releases republished on Finviz because both IR sites returned 403; the NVDA Oct 23 item is from Gotrade, an aggregator. retrievedAt is the source pages' quote timestamp (11:15 AM EDT), since this run had no clock time of its own. Rerun after 4 PM ET to roll the window forward to the Oct 28 close."
+  },
+  {
+    date: "2026-10-28",
+    summary: [
+      "First live refresh. Watchlist is now AMD, BWXT, FOXF, NVDA; sample entries for NVDA, JPM, ACN, DE, LLY removed.",
+      "AMD 552.72 to 567.35 on an expanded Meta partnership (Helios racks, $1B investment in Meta's equity offering)",
+      "BWXT 135.11 to 133.35, no major news found in the last seven days",
+      "FOXF 14.85 to 15.36, no major news found in the last seven days",
+      "NVDA 221.97 to 217.75 on the Oct 22 chip sell-off, then new Meta and Oracle deals",
+      "Added: AMD Q3 earnings Nov 3, BWXT Q3 results Nov 2, FOXF Q3 results Nov 5, FOMC decision Oct 28, October CPI Nov 10.",
+      "Missing: no news items dated Oct 21 to Oct 28 found for BWXT or FOXF (lists left empty). No NVDA company event found for the next 14 days (earnings date not confirmed).",
+      "Prices are closes Oct 21 to Oct 27 plus an intraday price on Oct 28 between 11:01 and 11:15 AM ET (market open)."
+    ],
+    note: "Verify by hand: the Oct 28 intraday prices (they will change by the close); BWXT Nov 2 and FOXF Nov 5 dates come from wire releases republished on Finviz because both IR sites returned 403; the NVDA Oct 23 item is from Gotrade, an aggregator. FOMC and CPI are market-wide items listed under NVDA."
+  },
   {
     date: "2026-10-16",
     summary: [

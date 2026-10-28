@@ -47,11 +47,11 @@ const BRIEF = {
   mode: "sample",          // "sample" until the first real refresh, then "live"
   asOf: "2026-10-17",      // date of the latest price in the data (YYYY-MM-DD)
   retrievedAt: "2026-10-17T16:30:00-04:00",
-  priceType: "close",      // "close" or "intraday"
+  priceType: "close",      // always "close" (CLAUDE.md rule 7); the page can still render "intraday"
   companies: {
     NVDA: {
       closes: [ { date: "2026-10-13", close: 100.00 }, /* five trading days, oldest first */ ],
-      latest: null,        // { date, time, price } when priceType is "intraday", else null
+      latest: null,        // always null (closes only); the page still supports { date, time, price }
       priceSource: "https://...",
       news: [ { date: "2026-10-15", headline: "...", source: "Reuters", url: "https://...", why: "..." } ],
       upcoming: [ { date: "2026-10-28", event: "Q3 earnings after close", source: "Company IR", url: "https://..." } ]

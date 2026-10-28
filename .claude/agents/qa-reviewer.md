@@ -23,7 +23,8 @@ Data integrity
 5. For every company in `BRIEF.companies`: `closes` is an array of at most five objects with
    ISO `date` and numeric `close`, oldest first, dates strictly increasing; `latest` is
    `null` or an object with `date`, `time`, and numeric `price`; `priceSource` is an https URL.
-6. `BRIEF.priceType` is `"close"` when every `latest` is null and `"intraday"` otherwise.
+6. `BRIEF.priceType` is `"close"` and every `latest` is null (CLAUDE.md rule 7: closes
+   only, never an intraday price).
 7. Every news item has `date` (ISO), `headline`, `source`, `url` (https, not a search page),
    and `why`. Every news date is within seven days before `BRIEF.asOf`, inclusive.
 8. Every upcoming item has `date` (ISO, not before `BRIEF.asOf`), `event`, `source`, `url`.
